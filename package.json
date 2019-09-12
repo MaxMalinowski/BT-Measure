@@ -1,0 +1,10 @@
+{
+	"name": "rssi_to_iota",
+	"license": "MIT",
+	"dependencies": {
+		"@iota/core": "^1.0.0-beta.7",
+		"@iota/mam": "^0.5.0",
+		"@iota/converter": "^1.0.0-beta.21",
+		"zeromq": "^5.1.0"
+	}
+}

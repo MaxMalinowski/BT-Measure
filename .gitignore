@@ -1,0 +1,14 @@
+# ide files
+.idea/
+
+# apple files
+.AppleDouble/
+
+# setup.py and npm files
+dist
+Bluetooth.egg-info
+node_modules
+
+# json
+*.json
+!./*.json
