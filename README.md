@@ -1,17 +1,21 @@
 # RSSI Scanner
 
-Scanner getting the rssi values of Bluetooth / BLE devices
+Scanner for getting the rssi values of Bluetooth / BLE devices.
 
 ## Installation
 
+For the usage of Bluetooth / BLE a current BlueZ installation is required.
+
 ````bash
+# for ble/blutooth -> required
 sudo python3 setup.py install
+# for iota -> optional
 sudo npm install .
 ````
 
 ## Usage
 
-All source code files are lying in the src folder.
+All source code files are unter the src folder.
 
 To scan for bluetooth devices use the bluetooth_rssi.py script.
 ````bash
@@ -28,11 +32,10 @@ If wished, to set a device in advertising mode (e.g. to verify) execute the comm
 sudo hciconfig hci0 leadv
 ````
 
-Directly on the commandline this can be used to verify or gain more insight
+Directly on the commandline the tools hcidump and / or btmon can be used to get more insight.
 ````bash
 sudo hcidump --raw
 sudo hcidump --raw -X
-# used be the ble_rssi.py script
 sudo btmon
 ````
 
